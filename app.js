@@ -4,22 +4,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var config = require('./config/config');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var apiRouter = require('./routes/api');
 
-mongoose.connect(config.mongoConfig.link, { useNewUrlParser: true } , (err)=>{
-  if (err) {
-    console.log('Could NOT connect to mongodb: ', err); // Return error message
-  } else {
-    console.log('Connected to ' + config.mongoConfig.link); // Return success message
-  }
-});
+
 var app = express();
 
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use((req, res, next) => {
