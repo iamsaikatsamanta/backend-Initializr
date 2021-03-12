@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const Common = require('../utils/response');
 const Admin = require('../model/admin');
 const Config = require('../config/config');
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
 
 exports.createAdmin=(req,res)=>{
     bcrypt.hash(req.body.password,12)
