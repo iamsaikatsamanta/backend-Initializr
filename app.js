@@ -4,12 +4,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-// var mongoose = require('mongoose');
-var config = require('./config/config');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var apiRouter = require('./routes/api');
-const adminApiRouter = require('./routes/admin.api');
+// // var mongoose = require('mongoose');
+// var config = require('./config/config');
+// var indexRouter = require('./routes/index');
+// var usersRouter = require('./routes/users');
+// var apiRouter = require('./routes/api');
+// const adminApiRouter = require('./routes/admin.api');
 
 var app = express();
 
