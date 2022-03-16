@@ -3,7 +3,7 @@ const express = require('express'),
    
 
 const bodyParser = require('body-parser');
-const urlencodedParser = bodyParser.urlencoded({extended: true});
+// const urlencodedParser = bodyParser.urlencoded({extended: true});
 const authlocal= require('../middleware/check-auth');
 const CourseController = require('../controller/CourseController');
 const AdminAuthController = require('../controller/AdminAuthController');
