@@ -9,7 +9,7 @@ var config = require('./config/config');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var apiRouter = require('./routes/api');
-const adminApiRouter = require('./routes/admin.api');
+// const adminApiRouter = require('./routes/admin.api');
 
 var app = express();
 
